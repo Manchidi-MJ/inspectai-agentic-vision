@@ -1,0 +1,48 @@
+{
+  "dataset": {
+    "n_normal": 40,
+    "n_defect": 40,
+    "seed": 7
+  },
+  "opencv_version": "5.0.0",
+  "baseline": {
+    "threshold": 0.49,
+    "tp": 39,
+    "fp": 0,
+    "tn": 40,
+    "fn": 1,
+    "precision": 1.0,
+    "recall": 0.975,
+    "f1": 0.9873,
+    "accuracy": 0.9875
+  },
+  "agent": {
+    "tp": 39,
+    "fp": 0,
+    "tn": 40,
+    "fn": 1,
+    "precision": 1.0,
+    "recall": 0.975,
+    "f1": 0.9873,
+    "accuracy": 0.9875,
+    "escalation_rate": 0.0375,
+    "mean_iterations": 2.038,
+    "max_iterations": 3
+  },
+  "score_roc_auc": 0.9944,
+  "best_f1_threshold": {
+    "threshold": 0.5148,
+    "f1": 0.9873
+  },
+  "pixel_iou": {
+    "n": 40,
+    "mean": 0.7044,
+    "median": 0.7914
+  },
+  "latency_ms": {
+    "detector_mean": 1.66,
+    "detector_p95": 1.93,
+    "agent_mean": 2.37,
+    "agent_p95": 2.99
+  }
+}

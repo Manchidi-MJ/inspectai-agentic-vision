@@ -1,0 +1,20 @@
+# Reference App Runner configuration (apprunner.yaml style).
+# App Runner primarily consumes image + port + env via the API/console; this
+# file documents the intended runtime settings in one place.
+version: 1.0
+runtime: docker
+build:
+  # Image is built from the repo Dockerfile and pushed to ECR (see
+  # deployment/aws-deployment.md). App Runner pulls the pushed image.
+  commands: []
+run:
+  command: uvicorn src.api.routes:app --host 0.0.0.0 --port 8080
+  network:
+    port: 8080
+  env:
+    - name: INSPECTAI_MAX_UPLOAD_BYTES
+      value: "8388608"
+    - name: INSPECTAI_MAX_AGENT_ITERS
+      value: "4"
+  # Health check: HTTP GET /health (configured on the service, shown here for
+  # documentation).

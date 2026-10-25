@@ -1,0 +1,12 @@
+# InspectAI pinned dependencies
+# Verified environment: Python 3.11.9 (Windows), OpenCV 5.0.0
+opencv-python==5.0.0.93
+numpy==2.4.6
+streamlit==1.40.2
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+python-multipart==0.0.20
+pydantic==2.10.4
+matplotlib==3.10.0
+pytest==8.3.4
+httpx==0.28.1

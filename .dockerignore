@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+tests/
+docs/
+deployment/
+artifacts/*
+!artifacts/.gitkeep
+samples/
+_*.py
+.env
+*.md

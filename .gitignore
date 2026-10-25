@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+
+# Env / secrets
+.env
+*.pem
+*.key
+
+# Generated artifacts (keep the folder, not its contents)
+artifacts/*
+!artifacts/.gitkeep
+
+# Large data / samples generated at runtime
+samples/generated/
+
+# OS
+.DS_Store
+Thumbs.db

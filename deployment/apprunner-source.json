@@ -1,0 +1,17 @@
+{
+  "ImageRepository": {
+    "ImageIdentifier": "<ACCOUNT_ID>.dkr.ecr.<AWS_REGION>.amazonaws.com/inspectai:latest",
+    "ImageRepositoryType": "ECR",
+    "ImageConfiguration": {
+      "Port": "8080",
+      "RuntimeEnvironmentVariables": {
+        "INSPECTAI_MAX_UPLOAD_BYTES": "8388608",
+        "INSPECTAI_MAX_AGENT_ITERS": "4"
+      }
+    }
+  },
+  "AutoDeploymentsEnabled": false,
+  "AuthenticationConfiguration": {
+    "AccessRoleArn": "arn:aws:iam::<ACCOUNT_ID>:role/<AppRunnerECRAccessRole>"
+  }
+}
